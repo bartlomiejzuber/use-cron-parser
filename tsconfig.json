@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"moduleResolution": "node",
 		"module": "esnext",
 		"target": "es5",
 		"lib": ["ESNext", "DOM"],
@@ -8,10 +9,10 @@
 		"strictNullChecks": true,
 		"preserveConstEnums": true,
 		"sourceMap": false,
-		"esModuleInterop": true,
 		"importHelpers": true,
 		"outDir": "dist/",
-		"types": ["react", "jest", "node"]
+		"esModuleInterop": true,
+    	"allowSyntheticDefaultImports": true,
 	},
 	"include": ["src/**/*"],
 	"exclude": [
