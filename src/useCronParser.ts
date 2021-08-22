@@ -84,7 +84,7 @@ function* cronParser([
     expression: dayMonth,
     current: nextOccurrence.getDate(),
     maxValue: getDaysAmountInMonth(nextOccurrence),
-    prevCronVal: nextMinute,
+    prevCronVal: nextHour,
   });
 
   nextOccurrence.setSeconds(nextSecond.value);
