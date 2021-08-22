@@ -2,17 +2,18 @@
 
 ![react hook](https://badgen.net/badge/icon/react-hook?icon=libraries&label)
 ![fully typed](https://badgen.net/badge/icon/fully-typed?icon=typescript&label)
+<!-- 
 [![npm](https://img.shields.io/npm/l/hooked-react-stopwatch.svg)](https://www.npmjs.com/package/use-cron-parser)
 [![npm](https://badgen.net/bundlephobia/minzip/use-cron-parser)](https://www.npmjs.com/package/use-cron-parser)
 [![Coverage Status](https://coveralls.io/repos/github/bartlomiejzuber/use-cron-parser/badge.svg)](https://coveralls.io/github/bartlomiejzuber/use-cron-parser)
 [![Build Status](https://travis-ci.org/bartlomiejzuber/use-cron-parser.svg?branch=master)](https://travis-ci.org/bartlomiejzuber/use-cron-parser)
 [![License](https://img.shields.io/npm/v/use-cron-parser.svg)](https://github.com/bartlomiejzuber/use-cron-parser/blob/master/LICENSE)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d360c27d-3707-4eb8-a0bd-b6e0d65a3e22/deploy-status)](https://app.netlify.com/sites/use-cron-parser-demo/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d360c27d-3707-4eb8-a0bd-b6e0d65a3e22/deploy-status)](https://app.netlify.com/sites/use-cron-parser-demo/deploys) -->
 <!-- <p align="center">
   <img src="https://raw.githubusercontent.com/bartlomiejzuber/use-cron-parser/master/assets/icon.png" alt="hook icon"/>
 </p> -->
 
-Useful & super tiny (less than 1KB ✔️) (❤️obvious dep on React only) hook to open links in new window.
+<!-- Useful & super tiny (less than 1KB ✔️) (❤️obvious dep on React only) hook to open links in new window. -->
 
 ## Installation
 
@@ -112,7 +113,7 @@ Link to npm:
 | titlebar     | Whether or not to display the title bar. Ignored unless the calling application is an HTML Application or a trusted dialog box.                                                                                                                                                                                                                                                                                                                                 | null      |
 | toolbar      | Whether or not to display the browser toolbar. IE and Firefox only.                                                                                                                                                                                                                                                                                                                                                                                             | null      | -->
 
-Dependencies ![Deps](https://badgen.net/npm/dependents/use-cron-parser)
+<!-- Dependencies ![Deps](https://badgen.net/npm/dependents/use-cron-parser) -->
 --------
 <!-- None. Self source code only. (❤️obvious peer dep on React only) -->
 
