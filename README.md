@@ -8,9 +8,9 @@
 [![Build Status](https://travis-ci.org/bartlomiejzuber/use-cron-parser.svg?branch=master)](https://travis-ci.org/bartlomiejzuber/use-cron-parser)
 [![License](https://img.shields.io/npm/v/use-cron-parser.svg)](https://github.com/bartlomiejzuber/use-cron-parser/blob/master/LICENSE)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d360c27d-3707-4eb8-a0bd-b6e0d65a3e22/deploy-status)](https://app.netlify.com/sites/use-cron-parser-demo/deploys)
-<p align="center">
+<!-- <p align="center">
   <img src="https://raw.githubusercontent.com/bartlomiejzuber/use-cron-parser/master/assets/icon.png" alt="hook icon"/>
-</p>
+</p> -->
 
 Useful & super tiny (less than 1KB ✔️) (❤️obvious dep on React only) hook to open links in new window.
 
@@ -31,7 +31,7 @@ Link to npm:
 
 ## Usage
 
-- With URL and options passed to hook
+<!-- - With URL and options passed to hook
   ```javascript
   import React from 'react';
   import { useOpenInWindow }  from 'use-cron-parser';
@@ -82,18 +82,18 @@ Link to npm:
   export default App;
   ```
 
-[DEMO](https://use-cron-parser-demo.netlify.app/)
+[DEMO](https://use-cron-parser-demo.netlify.app/) -->
 
 ### Hook params
 
-| Parameter | Type                   | Description                                             | Required |
+<!-- | Parameter | Type                   | Description                                             | Required |
 |-----------|------------------------|---------------------------------------------------------|----------|
 | url       | string                 | Url to load inside new window                           | Y        |
-| options   | UseOpenInWindowOptions | Set of hook options (centered, focus, window size etc.) | N        |
+| options   | UseOpenInWindowOptions | Set of hook options (centered, focus, window size etc.) | N        | -->
 
 #### Options
 
-| Option       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Default   |
+<!-- | Option       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Default   |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | name         | Specifies the target attribute or the name of the window. The following values are supported:<br><br>        _blank - URL is loaded into a new window, or tab.<br><br>        _parent - URL is loaded into the parent frame<br><br>        _self - URL replaces the current page<br><br>        _top - URL replaces any framesets that may be loaded<br><br>        name - The name of the window (Note: the name does not specify the title of the new window) | _blank    |
 | centered     | Specifies if window should be centered                                                                                                                                                                                                                                                                                                                                                                                                                          | true      |
@@ -110,15 +110,15 @@ Link to npm:
 | scrollbars   | Whether or not to display scroll bars. IE, Firefox & Opera only.                                                                                                                                                                                                                                                                                                                                                                                                | null      |
 | status       | Whether or not to add a status bar                                                                                                                                                                                                                                                                                                                                                                                                                              | null      |
 | titlebar     | Whether or not to display the title bar. Ignored unless the calling application is an HTML Application or a trusted dialog box.                                                                                                                                                                                                                                                                                                                                 | null      |
-| toolbar      | Whether or not to display the browser toolbar. IE and Firefox only.                                                                                                                                                                                                                                                                                                                                                                                             | null      |
+| toolbar      | Whether or not to display the browser toolbar. IE and Firefox only.                                                                                                                                                                                                                                                                                                                                                                                             | null      | -->
 
 Dependencies ![Deps](https://badgen.net/npm/dependents/use-cron-parser)
 --------
-None. Self source code only. (❤️obvious peer dep on React only)
+<!-- None. Self source code only. (❤️obvious peer dep on React only) -->
 
 Reliability
 --------
-This package is fully tested with total coverage set to [![Coverage Status](https://coveralls.io/repos/github/bartlomiejzuber/use-cron-parser/badge.svg)](https://coveralls.io/github/bartlomiejzuber/use-cron-parser). If you found any issue please report it [here](https://github.com/bartlomiejzuber/use-cron-parser/issues/new).
+<!-- This package is fully tested with total coverage set to [![Coverage Status](https://coveralls.io/repos/github/bartlomiejzuber/use-cron-parser/badge.svg)](https://coveralls.io/github/bartlomiejzuber/use-cron-parser). If you found any issue please report it [here](https://github.com/bartlomiejzuber/use-cron-parser/issues/new). -->
 
 License
 --------
