@@ -1,7 +1,7 @@
 {
   "name": "use-cron-parser",
   "version": "0.0.2",
-  "description": "Tiny React hook for making health checks simple & fast",
+  "description": "Tiny React hook for parsing cron expression",
   "main": "dist/index.js",
   "module": "dist/use-cron-parser.esm.js",
   "typings": "dist/index.d.ts",
@@ -38,21 +38,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/bartlomiejzuber/useOpenInWindow.git"
+    "url": "git+ssh://git@github.com/bartlomiejzuber/use-cron-parser.git"
   },
   "keywords": [
     "react",
     "use",
     "hook",
-    "open",
-    "links",
-    "new",
-    "window",
-    "separate",
-    "centered",
-    "href",
-    "target",
-    "blank"
+    "cron",
+    "parse",
+    "get",
+    "next",
+    "occurrence",
+    "date",
+    "parser",
+    "syntax",
+    "expression"
   ],
   "author": "Bartlomiej Zuber (bartlomiej.zuber@outlook.com)",
   "license": "MIT",
@@ -61,7 +61,6 @@
   },
   "homepage": "https://github.com/bartlomiejzuber/useOpenInWindow#readme",
   "dependencies": {
-    "date-fns": "^2.19.0",
-    "dayjs": "^1.10.4"
+    "date-fns": "^2.19.0"
   }
 }

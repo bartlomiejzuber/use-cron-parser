@@ -2,7 +2,7 @@
 
 ![react hook](https://badgen.net/badge/icon/react-hook?icon=libraries&label)
 ![fully typed](https://badgen.net/badge/icon/fully-typed?icon=typescript&label) 
-[![npm](https://img.shields.io/npm/l/hooked-react-stopwatch.svg)](https://www.npmjs.com/package/use-cron-parser)
+[![npm](https://img.shields.io/npm/l/use-cron-parser.svg)](https://www.npmjs.com/package/use-cron-parser)
 [![npm](https://badgen.net/bundlephobia/minzip/use-cron-parser)](https://www.npmjs.com/package/use-cron-parser)
 [![Coverage Status](https://coveralls.io/repos/github/bartlomiejzuber/use-cron-parser/badge.svg)](https://coveralls.io/github/bartlomiejzuber/use-cron-parser)
 [![Build Status](https://travis-ci.org/bartlomiejzuber/use-cron-parser.svg?branch=master)](https://travis-ci.org/bartlomiejzuber/use-cron-parser)
