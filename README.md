@@ -1,19 +1,18 @@
 ## use-cron-parser
 
 ![react hook](https://badgen.net/badge/icon/react-hook?icon=libraries&label)
-![fully typed](https://badgen.net/badge/icon/fully-typed?icon=typescript&label)
-<!-- 
+![fully typed](https://badgen.net/badge/icon/fully-typed?icon=typescript&label) 
 [![npm](https://img.shields.io/npm/l/hooked-react-stopwatch.svg)](https://www.npmjs.com/package/use-cron-parser)
 [![npm](https://badgen.net/bundlephobia/minzip/use-cron-parser)](https://www.npmjs.com/package/use-cron-parser)
 [![Coverage Status](https://coveralls.io/repos/github/bartlomiejzuber/use-cron-parser/badge.svg)](https://coveralls.io/github/bartlomiejzuber/use-cron-parser)
 [![Build Status](https://travis-ci.org/bartlomiejzuber/use-cron-parser.svg?branch=master)](https://travis-ci.org/bartlomiejzuber/use-cron-parser)
 [![License](https://img.shields.io/npm/v/use-cron-parser.svg)](https://github.com/bartlomiejzuber/use-cron-parser/blob/master/LICENSE)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d360c27d-3707-4eb8-a0bd-b6e0d65a3e22/deploy-status)](https://app.netlify.com/sites/use-cron-parser-demo/deploys) -->
-<!-- <p align="center">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d360c27d-3707-4eb8-a0bd-b6e0d65a3e22/deploy-status)](https://app.netlify.com/sites/use-cron-parser-demo/deploys)
+<p align="center">
   <img src="https://raw.githubusercontent.com/bartlomiejzuber/use-cron-parser/master/assets/icon.png" alt="hook icon"/>
 </p> -->
 
-<!-- Useful & super tiny (less than 1KB ✔️) (❤️obvious dep on React only) hook to open links in new window. -->
+Useful & super tiny (less than 1KB ✔️) (❤️obvious dep on React only) hook to parse cron expression and get Date object with next cron occurrence.
 
 ## Installation
 
