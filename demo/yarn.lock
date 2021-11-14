@@ -10830,10 +10830,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-cron-parser@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/use-cron-parser/-/use-cron-parser-1.0.2.tgz#5ccab38f9a0928da3be665f84ab8fd4ebbdfad95"
-  integrity sha512-JzQ4CUpPonZKDNWQcAgoO30ZteCHyfncsH1qxM40D+KZr+sZB1KcrQ6mifuq+cEVgEp47AiyBMlnFgFtOALtSQ==
+use-cron-parser@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/use-cron-parser/-/use-cron-parser-1.0.3.tgz#798515cde39842ceb36b5367c00df4017534d9ea"
+  integrity sha512-hRZkipL1LwM8OA7H9GOuCk9RA/gIiWfYDV7jDIcU7Pe8Y1DjQvKkLwXEblR4yw6zWXO6/MByP9Df4UU3auVHbw==
   dependencies:
     date-fns "^2.25.0"
 
