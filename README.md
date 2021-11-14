@@ -10,7 +10,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d360c27d-3707-4eb8-a0bd-b6e0d65a3e22/deploy-status)](https://app.netlify.com/sites/use-cron-parser-demo/deploys)
 <p align="center">
   <img src="https://raw.githubusercontent.com/bartlomiejzuber/use-cron-parser/master/assets/icon.png" alt="hook icon"/>
-</p> -->
+</p>
 
 Useful & super tiny (less than 1KB ✔️) (❤️obvious dep on React only) hook to parse cron expression and get Date object with next cron occurrence.
 
