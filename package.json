@@ -1,6 +1,6 @@
 {
   "name": "use-cron-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny React hook for parsing cron expression",
   "main": "dist/index.js",
   "module": "dist/use-cron-parser.esm.js",
