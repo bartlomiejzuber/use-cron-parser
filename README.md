@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/l/use-cron-parser.svg)](https://www.npmjs.com/package/use-cron-parser)
 [![npm](https://badgen.net/bundlephobia/minzip/use-cron-parser)](https://www.npmjs.com/package/use-cron-parser)
 [![Coverage Status](https://coveralls.io/repos/github/bartlomiejzuber/use-cron-parser/badge.svg)](https://coveralls.io/github/bartlomiejzuber/use-cron-parser)
-[![Build Status](https://travis-ci.org/bartlomiejzuber/use-cron-parser.svg?branch=master)](https://travis-ci.org/bartlomiejzuber/use-cron-parser)
+[![Build Status](https://circleci.com/gh/bartlomiejzuber/use-cron-parser/tree/master.svg?style=svg)](https://circleci.com/gh/bartlomiejzuber/use-cron-parser/tree/master)
 [![License](https://img.shields.io/npm/v/use-cron-parser.svg)](https://github.com/bartlomiejzuber/use-cron-parser/blob/master/LICENSE)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d360c27d-3707-4eb8-a0bd-b6e0d65a3e22/deploy-status)](https://app.netlify.com/sites/use-cron-parser-demo/deploys)
 <p align="center">
