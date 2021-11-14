@@ -11,7 +11,7 @@
   <img src="https://raw.githubusercontent.com/bartlomiejzuber/use-cron-parser/master/assets/icon.jpeg" alt="hook icon"/>
 </p>
 
-Useful & super tiny (less than 1KB ✔️) (❤️obvious dep on React only) hook to parse cron expression and get Date object with next cron occurrence.
+Useful & super tiny (less than 5KB ✔️) (❤️obvious dep on React & one `add` function from date-fns) hook to parse cron expression and get Date object with next cron occurrence.
 
 ## Installation
 

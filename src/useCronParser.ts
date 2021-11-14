@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { add } from "date-fns";
 import { getDaysAmountInMonth } from "./timeHelpers";
 import { validate } from "./validator";
