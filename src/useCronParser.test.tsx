@@ -22,7 +22,7 @@ describe("useCronParser", () => {
       global.Date = originalDateImpl;
     });
 
-    it("next occurrence should be within 1 second", () => {
+    it("* * * * * - next occurrence should be within 1 second", () => {
       const date = new Date();
       const prevSeconds = date.getSeconds();
       jest.spyOn(global, "Date").mockImplementationOnce(() => date as any);
@@ -34,7 +34,7 @@ describe("useCronParser", () => {
       expect(value.getSeconds()).toBe(prevSeconds + 1);
     });
 
-    it("next occurrence should be set to next minute 10 seconds", () => {
+    it("10 * * * * - next occurrence should be set to next minute 10 seconds", () => {
       const date = new Date();
       date.setSeconds(20); // set seconds after 10 seconds so it should be next minute 10 seconds
       const prevMinutes = date.getMinutes();
@@ -49,7 +49,7 @@ describe("useCronParser", () => {
       expect(value.getMinutes()).toBe(prevMinutes + 1);
     });
 
-    it("next occurrence should be set to same minute 10 seconds", () => {
+    it("10 * * * * - next occurrence should be set to same minute 10 seconds", () => {
       const date = new Date();
       date.setSeconds(5); // set seconds before 10 seconds so it should be same minute 10 seconds
       date.setMinutes(10);
@@ -65,7 +65,7 @@ describe("useCronParser", () => {
       expect(value.getMinutes()).toBe(prevMinutes);
     });
 
-    it("two next occurrences should be set to 6 and 7 seconds after 10 minutes", () => {
+    it("* 10 * * * - two next occurrences should be set to 6 and 7 seconds after 10 minutes", () => {
       const date = new Date();
       date.setSeconds(5);
 
@@ -98,7 +98,7 @@ describe("useCronParser", () => {
       global.Date = originalDateImpl;
     });
 
-    it("next occurrence should be set to same hour but next minute", () => {
+    it("10 * 1 * * - next occurrence should be set to same hour but next minute", () => {
       const date = new Date();
       date.setSeconds(15);
       date.setMinutes(10);
@@ -116,7 +116,7 @@ describe("useCronParser", () => {
       expect(value.getHours()).toBe(1);
     });
 
-    it("next occurrence should be set to 4:01 am next day", () => {
+    it("0 1 4 * * - next occurrence should be set to 4:01 am next day", () => {
       const date = new Date();
       date.setSeconds(10);
       date.setMinutes(5);
@@ -135,14 +135,13 @@ describe("useCronParser", () => {
       expect(value.getDay()).toBe(currentDay + 1);
     });
 
-    it("next occurrence should be set to 7:00 31th day of current month", () => {
+    it("0 0 7 31 * - next occurrence should be set to 7:00 31th day of current month", () => {
       const date = new Date();
       date.setSeconds(0);
       date.setMinutes(0);
       date.setHours(7);
       date.setDate(2);
       date.setMonth(4); // setting month to May as May has 31 days
-      const currentDay = date.getDay();
 
       jest
         .spyOn(global, "Date")
@@ -158,14 +157,13 @@ describe("useCronParser", () => {
       expect(value.getDate()).toBe(31);
     });
 
-    it("next occurrence should be set to 7:00 31th day of next month which has 31 days", () => {
+    it("0 0 7 31 * - next occurrence should be set to 7:00 31th day of next month which has 31 days", () => {
       const date = new Date();
       date.setSeconds(0);
       date.setMinutes(0);
       date.setHours(7);
       date.setDate(2);
       date.setMonth(1); // setting February as it never have 31 days - next month March has 31 days
-      const currentDay = date.getDay();
 
       jest
         .spyOn(global, "Date")
@@ -187,6 +185,36 @@ describe("useCronParser", () => {
       expect(second.value.getHours()).toBe(7);
       expect(second.value.getDate()).toBe(31);
       expect(second.value.getMonth()).toBe(4);
+    });
+
+    it("5 4 * * * - At 04:05", () => {
+      const date = new Date();
+      date.setSeconds(0);
+      date.setMinutes(0);
+      date.setHours(1);
+      date.setDate(15);
+      date.setMonth(10); // setting February as it never have 31 days - next month March has 31 days
+
+      jest
+        .spyOn(global, "Date")
+        .mockImplementationOnce(() => date as any);
+      const { result } = renderHook(() => useCronParser("0 5 4 * *"));
+      const next = result.current;
+
+      const first = next();
+
+      expect(first.value.getSeconds()).toBe(0);
+      expect(first.value.getMinutes()).toBe(5);
+      expect(first.value.getHours()).toBe(4);
+      expect(first.value.getDate()).toBe(date.getDate());
+      expect(first.value.getMonth()).toBe(date.getMonth());
+
+      const second = next();
+      expect(second.value.getSeconds()).toBe(0);
+      expect(second.value.getMinutes()).toBe(5);
+      expect(second.value.getHours()).toBe(4);
+      expect(second.value.getDate()).toBe(date.getDate() + 1);
+      expect(second.value.getMonth()).toBe(date.getMonth());
     });
   });
 });
