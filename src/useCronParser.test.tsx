@@ -27,9 +27,9 @@ describe("useCronParser", () => {
       const prevSeconds = date.getSeconds();
       jest.spyOn(global, "Date").mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("* * * * *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const { value } = next();
+      const { value } = generator.next();
 
       expect(value.getSeconds()).toBe(prevSeconds + 1);
     });
@@ -41,9 +41,9 @@ describe("useCronParser", () => {
 
       jest.spyOn(global, "Date").mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("10 * * * *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const { value } = next();
+      const { value } = generator.next();
 
       expect(value.getSeconds()).toBe(10);
       expect(value.getMinutes()).toBe(prevMinutes + 1);
@@ -57,9 +57,9 @@ describe("useCronParser", () => {
 
       jest.spyOn(global, "Date").mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("10 * * * *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const { value } = next();
+      const { value } = generator.next();
 
       expect(value.getSeconds()).toBe(10);
       expect(value.getMinutes()).toBe(prevMinutes);
@@ -73,15 +73,15 @@ describe("useCronParser", () => {
         .spyOn(global, "Date")
         .mockImplementation(() => date as any);
       const { result } = renderHook(() => useCronParser("* 10 * * *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const first = next();
+      const first = generator.next();
 
       expect(first.value.getSeconds()).toBe(6);
       expect(first.value.getMinutes()).toBe(10);
 
       spy.mockRestore();
-      const second = next();
+      const second = generator.next();
       expect(second.value.getSeconds()).toBe(7);
       expect(second.value.getMinutes()).toBe(10);
     });
@@ -107,9 +107,9 @@ describe("useCronParser", () => {
 
       jest.spyOn(global, "Date").mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("10 * 1 * *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const { value } = next();
+      const { value } = generator.next();
 
       expect(value.getSeconds()).toBe(10);
       expect(value.getMinutes()).toBe(prevMinutes + 1);
@@ -125,9 +125,9 @@ describe("useCronParser", () => {
 
       jest.spyOn(global, "Date").mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("0 1 4 * *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const { value } = next();
+      const { value } = generator.next();
 
       expect(value.getSeconds()).toBe(0);
       expect(value.getMinutes()).toBe(1);
@@ -147,9 +147,9 @@ describe("useCronParser", () => {
         .spyOn(global, "Date")
         .mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("0 0 7 31 *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const { value } = next();
+      const { value } = generator.next();
 
       expect(value.getSeconds()).toBe(0);
       expect(value.getMinutes()).toBe(0);
@@ -169,9 +169,9 @@ describe("useCronParser", () => {
         .spyOn(global, "Date")
         .mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("0 0 7 31 *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const first = next();
+      const first = generator.next();
 
       expect(first.value.getSeconds()).toBe(0);
       expect(first.value.getMinutes()).toBe(0);
@@ -179,7 +179,7 @@ describe("useCronParser", () => {
       expect(first.value.getDate()).toBe(31);
       expect(first.value.getMonth()).toBe(2);
 
-      const second = next();
+      const second = generator.next();
       expect(second.value.getSeconds()).toBe(0);
       expect(second.value.getMinutes()).toBe(0);
       expect(second.value.getHours()).toBe(7);
@@ -199,9 +199,9 @@ describe("useCronParser", () => {
         .spyOn(global, "Date")
         .mockImplementationOnce(() => date as any);
       const { result } = renderHook(() => useCronParser("0 5 4 * *"));
-      const next = result.current;
+      const generator = result.current;
 
-      const first = next();
+      const first = generator.next();
 
       expect(first.value.getSeconds()).toBe(0);
       expect(first.value.getMinutes()).toBe(5);
@@ -209,7 +209,7 @@ describe("useCronParser", () => {
       expect(first.value.getDate()).toBe(date.getDate());
       expect(first.value.getMonth()).toBe(date.getMonth());
 
-      const second = next();
+      const second = generator.next();
       expect(second.value.getSeconds()).toBe(0);
       expect(second.value.getMinutes()).toBe(5);
       expect(second.value.getHours()).toBe(4);

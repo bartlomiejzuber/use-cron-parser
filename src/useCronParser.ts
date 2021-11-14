@@ -121,5 +121,5 @@ export const useCronParser = (
     return cronParser(cronExpressionParts);
   }, [cronExpression]);
 
-  return generator.next;
+  return generator;
 };
