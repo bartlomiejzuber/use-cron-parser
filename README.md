@@ -67,7 +67,7 @@ Link to npm:
 
 Dependencies ![Deps](https://badgen.net/npm/dependents/use-cron-parser)
 --------
-None. Self source code only. (❤️obvious peer dep on React only)
+One function from `date-fns` package & ❤️obvious peer dep on React only.
 
 Reliability
 --------
