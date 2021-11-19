@@ -75,4 +75,4 @@ This package is fully tested with total coverage set to [![Coverage Status](http
 License
 --------
 
-Made with :sparkling_heart: by [Bartlomiej Zuber (bartlomiej.zuber@outlook.com)](mailto:bartlomiej.zuber@outlook.com) while traveling around the world, and licensed under the [MIT License](LICENSE)
+Made with :sparkling_heart: by [Bartlomiej Zuber (bartlomiej.zuber@outlook.com)](mailto:bartlomiej.zuber@outlook.com) and licensed under the [MIT License](LICENSE)
