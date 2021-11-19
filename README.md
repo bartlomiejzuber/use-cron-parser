@@ -10,7 +10,7 @@
   <img src="https://raw.githubusercontent.com/bartlomiejzuber/use-cron-parser/master/assets/icon.jpeg" alt="hook icon"/>
 </p>
 
-Useful & super tiny (less than 5KB ✔️) (❤️obvious dep on React & one `add` function from date-fns) hook to parse cron expression and get Date object with next cron occurrence.
+Useful & super tiny (![bundlephobia package size](https://badgen.net/bundlephobia/minzip/use-cron-parser@1.0.3) less than 5KB ✔️) (❤️obvious dep on React & single function from `date-fns`) hook to parse cron expression and get Date object with next cron occurrence.
 
 ## Installation
 
@@ -64,9 +64,9 @@ Link to npm:
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | skipValidation        | Flag to skip/or not validation.                                                                                                                                                                                                                                                                                                                                                                                                                  | false      |
 
-Dependencies ![Deps](https://badgen.net/npm/dependents/use-cron-parser)
+Dependencies ![Deps](https://badgen.net//bundlephobia/dependency-count/use-cron-parser)
 --------
-One function from `date-fns` package & ❤️obvious peer dep on React only.
+Single function from `date-fns` package & ❤️obvious peer dep on React only.
 
 Reliability
 --------
