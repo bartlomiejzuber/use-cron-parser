@@ -49,7 +49,7 @@ Link to npm:
   export default App;
   ```
 
-[DEMO](https://use-cron-parser-demo.netlify.app/)
+[DEMO](https://use-cron-parser.netlify.app/)
 
 ## Hook params
 
